@@ -13,7 +13,8 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-print("\nLP2951 Calc \n")
+print("\nLP2951 CALC ")
+print("-----------------------\n")
 vref = 1.235
 voutmin = float(input("[-] VOut Minimum (v): "))
 voutmax = float(input("[-] VOut Maximum (v): "))
@@ -39,14 +40,14 @@ print("[+] K =", bcolors.OKBLUE, K, bcolors.ENDC)
 r11 = K * R3 * (voutmax - vref)
 r12 = vref * K + 1
 R1 = r11 // r12
-print("[+] R1 Value:", bcolors.OKBLUE, R1, bcolors.ENDC, "Ω")
+print("[+] R1 Value:", bcolors.OKBLUE, round(R1, 2), bcolors.ENDC, "Ω")
 
 
 #------------------------------------------#
 
 
 R2 = K * R3
-print("[+] R2 Value:", bcolors.OKBLUE, R2, bcolors.ENDC, "Ω\n")
+print("[+] R2 Value:", bcolors.OKBLUE, round(R2, 2), bcolors.ENDC, "Ω\n")
 
 
 #-------------------------------------------#
